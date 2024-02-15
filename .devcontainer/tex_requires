@@ -1,0 +1,10 @@
+subfigure
+uri
+jvlisting
+arydshln
+wrapfig
+# svg
+# transparent
+adjustbox
+beamertheme-metropolis
+# cat tex_requires |grep -v "^#" | xargs tlmgr install

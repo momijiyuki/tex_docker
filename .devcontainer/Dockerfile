@@ -32,6 +32,7 @@ RUN apt update && \
 
 RUN mkdir -p /root/workspace
 COPY texlive.profile /root/workspace
+COPY tex_requires /root/workspace
 COPY .latexmkrc /root
 WORKDIR /root/workspace
 
@@ -40,6 +41,8 @@ RUN mkdir install-tl && \
     tar xzf install-tl-unx.tar.gz -C install-tl --strip-components 1
 # RUN ./install-tl/install-tl --profile texlive.profile
 # RUN rm -r install-tl install-tl-unx.tar.gz
+# RUN cat tex_requires | grep -v "^#" | \
+    # xargs /usr/local/texlive/2023/bin/x86_64-linux/tlmgr install
 
 ENV PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 RUN echo "PS1='"${PS1}"'" >> ~/.bashrc
