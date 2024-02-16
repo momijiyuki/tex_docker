@@ -7,6 +7,7 @@ devcontainer for texlive
 cd /root/workspace/
 ./install-tl/install-tl --profile texlive.profile
 rm -r install-tl install-tl-unx.tar.gz
+cat tex_requires | grep -v "^#" | xargs tlmgr install
 ```
 
 ## 使用したコレクション
