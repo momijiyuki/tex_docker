@@ -14,7 +14,10 @@
 				"explorer.openEditors.visible": 0,
                 "files.insertFinalNewline": true,
                 "files.trimTrailingWhitespace": true,
-				"markdown-preview-enhanced.scrollSync": false
+				"markdown-preview-enhanced.scrollSync": false,
+				"workbench.view.alwaysShowHeaderActions": true,
+				"workbench.tree.enableStickyScroll": false,
+				"editor.stickyScroll.enabled": false
 			},
 			"extensions": [
 				"oderwat.indent-rainbow",
