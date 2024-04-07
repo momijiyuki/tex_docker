@@ -22,10 +22,10 @@ RUN apt update && \
     curl \
     tree \
     ca-certificates \
-    openssh-server \
-    libyaml-tiny-perl \
-    libfile-homedir-perl \
-    libunicode-linebreak-perl && \
+    openssh-server &&\
+    # libyaml-tiny-perl \
+    # libfile-homedir-perl \
+    # libunicode-linebreak-perl && \
     apt -y clean && \
     rm -rf /var/lib/apt/lists/*
 
