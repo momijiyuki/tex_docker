@@ -47,5 +47,5 @@ RUN mkdir install-tl && \
 ENV PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 RUN echo "PS1='"${PS1}"'" >> ~/.bashrc
 
-RUN echo 'PATH="$PATH:/usr/local/texlive/2023/bin/x86_64-linux"' >> ~/.bashrc
-# RUN /usr/local/texlive/2023/bin/x86_64-linux/tlmgr path add
+RUN echo 'PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"' >> ~/.bashrc
+# RUN /usr/local/texlive/2024/bin/x86_64-linux/tlmgr path add
