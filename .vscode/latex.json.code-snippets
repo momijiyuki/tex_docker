@@ -14,6 +14,7 @@
 	// }
 
 	"include&start": {
+        "scope": "latex",
         "prefix": "start",
         "body": [
             "\\documentclass[dvipdfmx]{jsarticle}",
@@ -40,7 +41,8 @@
             "\\end{document}"
         ]
     },
-    "sourcecord": {
+    "sourcecode": {
+        "scope": "latex",
         "prefix": "sourcein",
         "body": [
             "\\lstset{",
@@ -67,6 +69,7 @@
         ]
     },
     "ordered list": {
+        "scope": "latex",
         "prefix": "ordered",
         "body": [
             "\\begin{enumerate}",
@@ -76,6 +79,7 @@
         ]
     },
     "image": {
+        "scope": "latex",
         "prefix": "image",
         "body": [
             "\\begin{figure}[h]",
@@ -87,6 +91,7 @@
         ]
     },
     "setting table": {
+        "scope": "latex",
         "prefix": "tableset",
         "body": [
             "\\begin{table}[h]",
@@ -98,6 +103,7 @@
         ]
     },
     "use slide beamer": {
+        "scope": "latex",
         "prefix": "slidemetro",
         "body": [
             "\\documentclass[dvipdfm]{beamer}",
